@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dusty Rose Silk Saree - SHOPRA">
+  <title>Dusty Rose Silk Saree | SHOPRA</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">SHOPRA</a>
+
+    <div class="nav-links">
+      <div class="has-dropdown">
+        <a href="index.html#new">New Arrivals</a>
+      </div>
+      <div class="has-dropdown">
+        <a href="shop.html">Shop</a>
+      </div>
+      <a href="index.html#collections">Collections</a>
+    </div>
+
+    <div class="nav-icons">
+      <button aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </button>
+      <a href="#wishlist" aria-label="Wishlist">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+      </a>
+      <a href="#account" aria-label="Account">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+      </a>
+      <a href="#cart" aria-label="Cart">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Product Page Container -->
+  <main class="container section-padding" style="margin-top: 80px;">
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a> &nbsp;/&nbsp;
+      <a href="shop.html">Shop</a> &nbsp;/&nbsp;
+      <a href="#">Sarees</a> &nbsp;/&nbsp;
+      <span>Dusty Rose Silk Saree</span>
+    </div>
+
+    <!-- Product Layout -->
+    <div class="product-layout">
+      
+      <!-- Gallery Column -->
+      <div class="product-gallery">
+        <div class="thumbnail-list">
+          <img src="assets/product_main_1783928478467.png" alt="Dusty Rose Saree Thumbnail" class="thumbnail active" onclick="changeMainImage(this.src)">
+          <img src="assets/product_detail_1_1783928490046.png" alt="Saree Detail Thumbnail" class="thumbnail" onclick="changeMainImage(this.src)">
+          <img src="assets/product_detail_2_1783928501759.png" alt="Saree Lifestyle Thumbnail" class="thumbnail" onclick="changeMainImage(this.src)">
+          <img src="assets/saree_category_1783924821075.png" alt="Saree Model Thumbnail" class="thumbnail" onclick="changeMainImage(this.src)">
+        </div>
+        <div class="main-image-container">
+          <button class="wishlist-btn" style="top: 20px; right: 20px; width: 44px; height: 44px; font-size: 1.3rem;" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+          <img src="assets/product_main_1783928478467.png" alt="Dusty Rose Silk Saree" id="main-product-image">
+        </div>
+      </div>
+
+      <!-- Details Column -->
+      <div class="product-details">
+        <div class="product-header">
+          <div class="product-category">Premium Sarees</div>
+          <h1 class="product-title">Dusty Rose Silk Saree</h1>
+          <div class="product-price-large">₹18,500</div>
+        </div>
+
+        <p class="product-description">
+          Experience the epitome of elegance with our handwoven Dusty Rose Silk Saree. Meticulously crafted by master artisans, it features intricate zari borders that catch the light beautifully. The fabric drapes seamlessly, offering unparalleled comfort and a luxurious sheen that makes it perfect for festive occasions and elegant evenings.
+        </p>
+
+        <div class="product-options">
+          <div class="quantity-selector">
+            <span class="qty-label">Quantity</span>
+            <div class="qty-controls">
+              <button class="qty-btn" onclick="updateQty(-1)">-</button>
+              <input type="text" value="1" id="qty-input" readonly>
+              <button class="qty-btn" onclick="updateQty(1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-actions-large">
+          <button class="btn btn-primary btn-block"><i class="fas fa-shopping-cart" style="margin-right: 10px;"></i> Add to Cart</button>
+          <button class="btn btn-outline btn-block">Buy it Now</button>
+        </div>
+
+        <!-- Accordions -->
+        <div class="accordions">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Product Details & Dimensions</span>
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Fabric: 100% Pure Kanjeevaram Silk</li>
+                <li>Length: 5.5 Meters</li>
+                <li>Blouse Piece: 0.8 Meters included (Unstitched)</li>
+                <li>Zari: Authentic gold-plated silver zari</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Material & Care</span>
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Dry clean only. Store in a breathable cotton bag. Do not use perfumes or deodorants directly on the fabric. Iron on reverse side only.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Shipping & Returns</span>
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Complimentary shipping on orders over ₹10,000. Delivery within 5-7 business days. 14-day return policy for unstitched and unused items.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- You May Also Like Section -->
+  <section class="section-padding" style="background-color: var(--bg-section);">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="subtitle">Discover More</span>
+          <h2>You May Also Like</h2>
+        </div>
+      </div>
+      
+      <div class="slider-wrapper">
+        <button class="slider-btn side-slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn side-slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        <div class="product-scroll-container">
+          <!-- Reusing product cards -->
+          <div class="product-card">
+            <div class="product-image">
+              <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+              <img src="assets/bedsheet_category_1783924833095.png" alt="Sage Green Linen Set" style="object-position: center;">
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <div class="product-category">Bedsheets</div>
+                <button class="add-to-cart-small"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+              <h3 class="product-name">Sage Green Linen Set</h3>
+              <div class="product-price">₹8,200</div>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-image">
+              <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="far fa-heart"></i></button>
+              <img src="assets/saree_category_1783924821075.png" alt="Ivory Handloom Cotton">
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <div class="product-category">Sarees</div>
+                <button class="add-to-cart-small"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+              <h3 class="product-name">Ivory Handloom Cotton</h3>
+              <div class="product-price">₹12,000</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">SHOPRA</a>
+          <p>Elevating everyday living with premium Indian textiles, timeless elegance, and unparalleled comfort.</p>
+        </div>
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <ul>
+            <li><a href="index.html#sarees">Sarees</a></li>
+            <li><a href="index.html#bedsheets">Bedsheets</a></li>
+            <li><a href="index.html#new">New Arrivals</a></li>
+            <li><a href="index.html#collections">Collections</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>CUSTOMER SERVICE</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#shipping">Shipping Policy</a></li>
+            <li><a href="#returns">Return Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>ABOUT</h4>
+          <ul>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <div class="social-links">
+            <a href="#instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SHOPRA. All Rights Reserved.</p>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa fa-2x"></i>
+          <i class="fab fa-cc-mastercard fa-2x"></i>
+          <i class="fab fa-cc-amex fa-2x"></i>
+          <i class="fab fa-cc-paypal fa-2x"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    // Product Page Specific JS
+    function changeMainImage(src) {
+      document.getElementById('main-product-image').src = src;
+      const thumbnails = document.querySelectorAll('.thumbnail');
+      thumbnails.forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    function updateQty(change) {
+      const input = document.getElementById('qty-input');
+      let val = parseInt(input.value);
+      val += change;
+      if(val < 1) val = 1;
+      input.value = val;
+    }
+
+    // Accordion Logic
+    const accordions = document.querySelectorAll('.accordion-header');
+    accordions.forEach(acc => {
+      acc.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        const icon = this.querySelector('i');
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          icon.classList.remove('fa-minus');
+          icon.classList.add('fa-plus');
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.classList.remove('fa-plus');
+          icon.classList.add('fa-minus');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
