@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Profile - SHOPORA">
+  <title>My Profile | SHOPORA</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">SHOPORA</a>
+
+    <div class="nav-links">
+      <div class="has-dropdown">
+        <a href="new-arrivals.html">New Arrivals</a>
+      </div>
+      <div class="has-dropdown">
+        <a href="shop.html">Shop</a>
+      </div>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="nav-icons">
+      <button aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </button>
+      <a href="wishlist.html" aria-label="Wishlist">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+      </a>
+      <a href="profile.html" aria-label="Account" style="color: var(--primary);">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+      </a>
+      <a href="cart.html" aria-label="Cart">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="container section-padding" style="margin-top: 80px;">
+    
+    <div class="page-header">
+      <h1>My Account</h1>
+    </div>
+
+    <div class="profile-layout">
+      <!-- Sidebar Navigation -->
+      <aside class="profile-sidebar">
+        <ul class="profile-nav">
+          <li><a href="#" class="active">Account Details</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">Payment Methods</a></li>
+          <li><a href="#">Addresses</a></li>
+          <li><a href="#" style="color: #ba1a1a; margin-top: 20px;">Log Out</a></li>
+        </ul>
+      </aside>
+
+      <!-- Profile Content -->
+      <div class="profile-content">
+        <h2>Account Details</h2>
+        
+        <form>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" class="form-input" value="Jane">
+          </div>
+          
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" class="form-input" value="Doe">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-input" value="jane.doe@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="form-input" value="+91 98765 43210">
+          </div>
+
+          <div style="margin-top: 40px;">
+            <button type="submit" class="btn-primary">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">SHOPORA</a>
+          <p>Elevating everyday living with premium Indian textiles, timeless elegance, and unparalleled comfort.</p>
+        </div>
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <ul>
+            <li><a href="shop.html">Shop All</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>CUSTOMER SERVICE</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#shipping">Shipping Policy</a></li>
+            <li><a href="#returns">Return Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>ABOUT</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <div class="social-links">
+            <a href="#instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SHOPORA. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
