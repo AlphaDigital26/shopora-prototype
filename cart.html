@@ -12,9 +12,10 @@
 
   <!-- Navigation -->
   <nav class="navbar">
-    <a href="index.html" class="logo">SHOPORA</a>
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt="Shopora Logo" class="logo-img"></a>
 
     <div class="nav-links">
+      <a href="index.html">Home</a>
       <div class="has-dropdown">
         <a href="new-arrivals.html">New Arrivals</a>
       </div>
@@ -46,75 +47,129 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
         </svg>
       </a>
+      <button class="menu-toggle" aria-label="Toggle Menu" style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
   </nav>
 
   <!-- Main Content Container -->
-  <main class="container section-padding" style="margin-top: 80px;">
+    <main class="container section-padding" style="margin-top: 80px;">
     
-    <div class="page-header">
-      <h1>Your Cart</h1>
+    <div class="page-header wholesale-header">
+      <h1>Wholesale Cart</h1>
+      <p class="wholesale-subtitle">Review your bulk fabric selections before finalizing your trade order.</p>
     </div>
 
     <div class="cart-layout">
       <!-- Cart Items -->
-      <div class="cart-items">
+      <div class="cart-items wholesale-items">
         <!-- Item 1 -->
-        <div class="cart-item">
-          <img src="assets/product_main_1783928478467.png" alt="Dusty Rose Silk Saree" class="cart-item-img">
-          <div class="cart-item-details">
-            <h3 class="cart-item-title">Dusty Rose Silk Saree</h3>
-            <div class="cart-item-price">₹18,500</div>
-            <div class="cart-item-actions">
-              <div class="quantity-control">
-                <button class="quantity-btn">-</button>
-                <input type="text" value="1" class="quantity-input" readonly>
-                <button class="quantity-btn">+</button>
+        <div class="cart-item wholesale-item">
+          <button class="remove-icon-btn" aria-label="Remove item"><i class="fas fa-times"></i></button>
+          
+          <img src="assets/product_main_1783928478467.png" alt="Belgian Linen Weave" class="cart-item-img wholesale-img">
+          
+          <div class="wholesale-item-content">
+            <div class="wholesale-item-details">
+              <h3 class="cart-item-title">Belgian Linen Weave</h3>
+              <p class="sku-color-text">SKU: TX-LN-001 &bull; COLOR: IVORY</p>
+              <div class="cart-item-tags">
+                <span class="tag-green">100% Linen</span>
+                <span class="tag-gray">Roll Width: 54"</span>
               </div>
-              <button class="remove-btn">Remove</button>
+              
+              <div class="wholesale-quantity-row">
+                <span class="quantity-label">Yards:</span>
+                <div class="quantity-control wholesale-quantity">
+                  <button class="quantity-btn">-</button>
+                  <input type="text" value="250" class="quantity-input" readonly>
+                  <button class="quantity-btn">+</button>
+                </div>
+                <span class="min-qty-text">MIN: 50 YDS</span>
+              </div>
+            </div>
+            
+            <div class="wholesale-item-pricing">
+              <div class="price-retail">.00/yd</div>
+              <div class="price-trade">.50/yd <span class="trade-label">(Trade)</span></div>
+              <div class="price-total">,125.00</div>
             </div>
           </div>
         </div>
 
         <!-- Item 2 -->
-        <div class="cart-item">
-          <img src="assets/bedsheet_category_1783924833095.png" alt="Sage Green Linen Set" class="cart-item-img">
-          <div class="cart-item-details">
-            <h3 class="cart-item-title">Sage Green Linen Set</h3>
-            <div class="cart-item-price">₹8,200</div>
-            <div class="cart-item-actions">
-              <div class="quantity-control">
-                <button class="quantity-btn">-</button>
-                <input type="text" value="2" class="quantity-input" readonly>
-                <button class="quantity-btn">+</button>
+        <div class="cart-item wholesale-item">
+          <button class="remove-icon-btn" aria-label="Remove item"><i class="fas fa-times"></i></button>
+          
+          <img src="assets/bedsheet_category_1783924833095.png" alt="Silk Crepe de Chine" class="cart-item-img wholesale-img">
+          
+          <div class="wholesale-item-content">
+            <div class="wholesale-item-details">
+              <h3 class="cart-item-title">Silk Crepe de Chine</h3>
+              <p class="sku-color-text">SKU: TX-SK-042 &bull; COLOR: SAGE</p>
+              <div class="cart-item-tags">
+                <span class="tag-green">100% Silk</span>
+                <span class="tag-gray">Roll Width: 44"</span>
               </div>
-              <button class="remove-btn">Remove</button>
+              
+              <div class="wholesale-quantity-row">
+                <span class="quantity-label">Yards:</span>
+                <div class="quantity-control wholesale-quantity">
+                  <button class="quantity-btn">-</button>
+                  <input type="text" value="100" class="quantity-input" readonly>
+                  <button class="quantity-btn">+</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="wholesale-item-pricing">
+              <div class="price-retail">.00/yd</div>
+              <div class="price-trade">.00/yd <span class="trade-label">(Trade)</span></div>
+              <div class="price-total">,200.00</div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Order Summary -->
-      <div class="order-summary">
+      <div class="order-summary wholesale-summary">
         <h3>Order Summary</h3>
         <div class="summary-row">
-          <span>Subtotal</span>
-          <span>₹34,900</span>
+          <span>Subtotal (350 Yards)</span>
+          <span>$6,325.00</span>
         </div>
         <div class="summary-row">
-          <span>Shipping</span>
-          <span>Calculated at checkout</span>
+          <span>Trade Discount Applied</span>
+          <span>-$2,675.00</span>
         </div>
-        <div class="summary-row summary-total">
-          <span>Total</span>
-          <span>₹34,900</span>
+        <div class="summary-row">
+          <span>Estimated Freight Shipping</span>
+          <span>$145.00</span>
         </div>
         
-        <a href="#" class="btn-primary" style="width: 100%; margin-top: 20px;">Proceed to Checkout</a>
-        <a href="shop.html" class="btn-outline" style="width: 100%; margin-top: 15px;">Continue Shopping</a>
+        <div class="summary-row summary-total wholesale-total">
+          <span class="total-label">Total</span>
+          <div class="total-amount-wrapper">
+            <span class="total-amount">$6,470.00</span>
+            <span class="tax-note">USD, EXCLUDES TAX</span>
+          </div>
+        </div>
+        
+        <div class="po-input-group">
+          <label for="po-number">PURCHASE ORDER NUMBER (OPTIONAL)</label>
+          <input type="text" id="po-number" class="po-input" placeholder="Enter PO Number">
+        </div>
+        
+        <a href="checkout.html" class="btn-primary btn-checkout" style="text-decoration: none;">Proceed to Checkout &rarr;</a>
+        
+        <div class="secure-checkout-note">
+          <i class="fas fa-lock"></i> SECURE WHOLESALE CHECKOUT
+        </div>
       </div>
     </div>
-
   </main>
 
   <!-- Footer -->
