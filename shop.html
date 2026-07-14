@@ -56,7 +56,7 @@
   </nav>
 
   <!-- Hero Banner -->
-  <header class="hero" style="min-height: 400px; height: 50vh; margin-top: 80px;">
+  <header class="hero" style="min-height: 350px; height: 50vh; margin-top: 80px;">
     <img src="assets/shop_banner_1783929943530.png" alt="Shop All Products" class="hero-bg">
     <div class="hero-overlay" style="background: rgba(0,0,0,0.3);"></div>
     <div class="hero-content" style="max-width: 800px;">
@@ -65,12 +65,16 @@
     </div>
   </header>
 
-  <!-- Main Content Container -->
-  <main class="container section-padding">
+  <!-- Explore Section (Full Width) -->
+  <section class="explore-section">
+    <!-- Aesthetic Background Elements -->
+    <div class="aesthetic-circle-1"></div>
+    <div class="aesthetic-circle-2"></div>
     
-    <div class="page-header" style="text-align: center;">
-      <h1>Explore by Collection</h1>
-    </div>
+    <div class="container">
+      <div class="page-header">
+        <h2>Explore by Collection</h2>
+      </div>
 
     <!-- Category Selector Slider -->
     <div class="category-slider-container">
@@ -95,13 +99,83 @@
         </a>
       </div>
     </div>
+  </section>
 
-    <div class="page-header" style="margin-top: 20px;">
-      <h1 id="dynamic-category-title">All Collection</h1>
-    </div>
+  <!-- Main Content Container -->
+  <main class="container section-padding" style="padding-top: 40px;">
+  <div class="shop-layout">
+    
+    <!-- Sidebar -->
+    <aside class="shop-sidebar">
+      <div class="sidebar-header">
+        <h3>Filters</h3>
+        <a href="#">Clear All</a>
+      </div>
 
-    <!-- All Products Grid -->
-    <div class="all-products-grid">
+      <div class="filter-group">
+        <div class="filter-title">Fabric</div>
+        <label class="filter-item">
+          <input type="checkbox" checked> Banarasi Silk <span class="count">(42)</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox"> Kanjivaram <span class="count">(28)</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox"> Cotton Linen <span class="count">(15)</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox"> Chiffon <span class="count">(34)</span>
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title">Color Family</div>
+        <div class="color-swatches">
+          <div class="color-swatch" style="background-color: #F8E2D6;"></div>
+          <div class="color-swatch" style="background-color: #D4EDDA;"></div>
+          <div class="color-swatch active" style="background-color: #F8D7DA;"></div>
+          <div class="color-swatch" style="background-color: #FDFBF7;"></div>
+          <div class="color-swatch" style="background-color: #E2E3E5;"></div>
+        </div>
+        <div class="color-swatches" style="margin-top: 10px;">
+          <div class="color-swatch" style="background-color: #5C4A3D;"></div>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title">Price / Unit</div>
+        <div class="price-inputs">
+          <input type="text" placeholder="Min">
+          <span>-</span>
+          <input type="text" placeholder="Max">
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title">Availability</div>
+        <label class="filter-item">
+          <input type="checkbox" checked> In Stock Only
+        </label>
+      </div>
+    </aside>
+
+    <!-- Main Grid Area -->
+    <div class="shop-main">
+      <div class="shop-top-bar">
+        <div class="product-count">Showing <strong>1-12</strong> of 119 products</div>
+        <div class="shop-sort">
+          <span style="color: var(--text-light); font-size: 0.95rem;">Sort by:</span>
+          <select>
+            <option>Newest Arrivals</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Best Sellers</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- All Products Grid -->
+      <div class="all-products-grid">
       
       <!-- Product 1 -->
       <div class="product-card">
@@ -199,8 +273,21 @@
           <div class="product-price">₹35,000</div>
         </div>
       </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <a href="#" class="page-btn"><i class="fas fa-chevron-left"></i></a>
+      <a href="#" class="page-num active">1</a>
+      <a href="#" class="page-num">2</a>
+      <a href="#" class="page-num">3</a>
+      <span class="page-dots">...</span>
+      <a href="#" class="page-num">10</a>
+      <a href="#" class="page-btn"><i class="fas fa-chevron-right"></i></a>
+    </div>
 
     </div>
+  </div>
 
   </main>
 
